@@ -11,6 +11,10 @@
     display: flex;
 }
 
+.relative{
+    position: relative;
+}
+
 /******* inizio header *******/
 
 
@@ -21,6 +25,7 @@
     justify-content: space-around;
     align-items: center;
     position: fixed;
+    z-index: 2;
 }
 
 .logo img{
@@ -45,4 +50,96 @@ a:hover{
     color: white;
 }
 
+.cart i:hover{
+    color: white;
+    text-decoration: underline;
+}
+
 /******* inizio main *******/
+
+.container{
+    width: 80%;
+    height: 1000px;
+    background-color: aqua;
+    margin: auto;
+}
+
+.box_image{
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 30px;
+    width: calc(100% / 3 - 40px);
+    height: 500px;
+    background-color: red;
+}
+
+.box_image_1{
+    background-image: url(../boolando-images/img/1.webp);
+    background-size: cover;
+    z-index: 1;
+    background-repeat: no-repeat;
+}
+
+.box_image_1:hover{
+    background-image: url(../boolando-images/img/1b.webp);
+    background-size: cover;
+    z-index: 1;
+    background-repeat: no-repeat;
+}
+
+.heart{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    padding: 5px;
+    background-color: white;
+    font-size: 40px;
+}
+
+.box_image:hover .heart{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    padding: 5px;
+    background-color: white;
+    color: red;
+}
+
+.discount{
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    color: white;
+    font-size: 14px;    
+}
+
+.discount_red{
+    background-color: red;
+    padding: 5px 10px 5px 10px;
+}
+
+.discount_green{
+    background-color: green;
+    padding: 5px 10px 5px 10px;
+}
+
+.description{
+    background-color: white;
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-left: 1px;
+}
+
+.price_1{
+    color: rgb(224, 0, 0);
+    font-size: 12px;
+}
+
+.price_2{
+    text-decoration: line-through;
+}
